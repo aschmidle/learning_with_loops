@@ -1,0 +1,21 @@
+"""
+A classic game high/low that has the user pick a number 1-100 and tries
+to mathch the randomly selected number.
+"""
+
+import random
+
+set_num = random.randint(1, 100)
+guess_num = int(input("Guess a number 1 - 100: "))
+
+
+while guess_num != set_num:
+    print("Nope, Guess Again!")
+    if guess_num < set_num:
+        print("Guess Higher")
+    elif guess_num > set_num:
+        print("Guess Lower")
+    guess_num = int(input("Guess again: "))
+   
+       
+print("You got it!")
