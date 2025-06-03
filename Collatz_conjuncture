@@ -1,0 +1,23 @@
+"""
+This program uses both while loops and if/else statements to take user input and run 
+runs the Collatz conjuncture.
+"""
+
+num = int(input("Enter a number: "))
+steps = 0
+
+
+while num <= 0:
+	num = int(input("Enter a positive integer only: "))
+
+print(f"\nYou selected {num} as your number. Now it's time for magic!\n")
+
+while num != 1:
+	if num % 2 == 0:
+		num = num//2
+		print(num)
+	else:
+		num = 3 * num +1
+		print(num)
+	steps += 1fro
+print(f"\nIt took {steps} steps to solve this.")
