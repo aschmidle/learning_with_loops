@@ -1,0 +1,11 @@
+while True:
+	print("To quit type 'exit.' ")
+	word = str(input("Enter a word: "))
+	word_lower = word.lower()
+	if word_lower == 'exit':
+		print(f"Thanks for playing!")
+		break
+	elif word_lower == word_lower [::-1]:
+		print(f"Your word {word} is a palindrome!")
+	else:
+		print(f"Your word {word} is not a palindrome.")
